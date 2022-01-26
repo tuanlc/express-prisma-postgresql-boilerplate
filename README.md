@@ -1,6 +1,6 @@
-# Boilerplate for typescript, postgresql and prisma
+# Boilerplate for express, postgresql, prisma and typescript
 
-This boilerplate follows clean architecture with SOLID principals. This sample define a simple user schema and handle two endpoints that allows users to create new accounts and login by them. There is also a middleware to validate JWT tokens that are provided by clients with `Bearer` authorization header.
+This boilerplate follows clean architecture with SOLID principles. This sample define a simple user schema and handle two endpoints that allows users to create new accounts and login by them. There is also a middleware to validate JWT tokens that are provided by clients with `Bearer` authorization header.
 
 ## Technologies
 - Environment: Nodejs
