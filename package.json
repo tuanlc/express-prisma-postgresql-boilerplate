@@ -1,0 +1,44 @@
+{
+  "name": "typescript-postgresql-prisma-solid-boilerplate",
+  "version": "0.0.1",
+  "description": "Boilerplate for typescript, postgresql and prisma. This boilerplate follows clean architecture with SOLID principles",
+  "main": "index.js",
+  "author": "tuancnttbk93@gmail.com",
+  "license": "MIT",
+  "scripts": {
+    "dev": "ts-node-dev --respawn --transpile-only --exit-child src/index.ts",
+    "lint": "eslint . --ext .ts",
+    "lint:auto-fix": "eslint . --ext .ts --quiet --fix",
+    "build:ts": "tsc",
+    "build:clean": "rimraf ./dist",
+    "build": "npm run build:clean && npm run build:ts",
+    "start": "node dist/index.js"
+  },
+  "engines": {
+    "node": "16.13.1"
+  },
+  "dependencies": {
+    "@prisma/client": "3.8.1",
+    "awilix": "6.0.0",
+    "bcryptjs": "2.4.3",
+    "body-parser": "1.19.0",
+    "cors": "2.8.5",
+    "express": "4.17.1",
+    "jsonwebtoken": "8.5.1"
+  },
+  "devDependencies": {
+    "@types/bcryptjs": "2.4.2",
+    "@types/cors": "2.8.12",
+    "@types/express": "4.17.13",
+    "@types/jsonwebtoken": "8.5.6",
+    "@typescript-eslint/eslint-plugin": "5.5.0",
+    "@typescript-eslint/parser": "5.5.0",
+    "eslint": "8.3.0",
+    "eslint-config-prettier": "8.3.0",
+    "eslint-plugin-prettier": "4.0.0",
+    "prettier": "2.5.0",
+    "prisma": "3.8.1",
+    "ts-node-dev": "1.1.8",
+    "typescript": "4.5.2"
+  }
+}
