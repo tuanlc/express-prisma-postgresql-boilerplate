@@ -6,7 +6,7 @@ export default class AuthController {
 
   login = async (req: Request, res: Response): Promise<unknown> => {
     const { email, password } = req.body;
-
+    debugger;
     if (!email || !password) {
       return res.status(400).json({
         error: {
@@ -42,5 +42,9 @@ export default class AuthController {
         },
       });
     }
+  };
+
+  getMessage = async (req: Request, res: Response): Promise<unknown> => {
+    return res.status(200).json({ message: 'What Up?' });
   };
 }
